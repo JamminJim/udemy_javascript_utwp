@@ -1,0 +1,18 @@
+.btn-group button {
+    background-color: cornflowerblue;
+    border: 1px solid blue;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    width:50%;
+    margin-top: 10px;
+    display: block;
+}
+.btn-group button:hover {
+    background-color:rgb(160,187,238);
+    color:black;
+}
+
+body{
+    display:block;
+}
