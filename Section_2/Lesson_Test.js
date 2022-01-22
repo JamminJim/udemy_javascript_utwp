@@ -1,12 +1,11 @@
-console.log("This is a test");
-console.log(this);
-
-for (let x = 0; x < 10; x++) {
-  console.log(x);
-}
-
-var double = (x, y) => {
-  return x * y;
-};
-
-console.log(double(10, 10));
+const pId = document.getElementById("paragraph");
+console.log(pId.textContent);
+pId.textContent = "Wow, I just changed the contents of a paragraph!";
+var tag = document.createElement("p");
+var text = document.createTextNode("adding a child is so neat.");
+tag.appendChild(text);
+pId.appendChild(tag);
+var atag = document.createElement("a");
+atag.setAttribute("href", "http://www.sony.com");
+atag.innerHTML = "Sony";
+document.getElementsByTagName("body")[0].appendChild(atag);
